@@ -33,9 +33,8 @@ public class FileUploadController {
     }
 
     @PostMapping("/")
-    public String handleFileUpload(@RequestParam("file") MultipartFile file) throws IOException {
+    public void handleFileUpload(@RequestParam("file") MultipartFile file) throws IOException {
         storageService.store(file);
-        return "Le fichier " + file.getOriginalFilename() + " a été envoyé";
     }
 
     @ExceptionHandler(StorageFileNotFoundException.class)
