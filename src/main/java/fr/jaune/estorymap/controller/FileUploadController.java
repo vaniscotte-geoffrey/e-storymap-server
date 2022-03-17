@@ -18,6 +18,7 @@ public class FileUploadController {
 
     @Autowired FileUploadController(StorageService storageService) {
         this.storageService = storageService;
+        this.storageService.loadFileInDatabase();
     }
 
     @GetMapping("/")

@@ -34,10 +34,4 @@ public class MCDDocument extends Document{
         final MCDReader mcd = new MCDReader(this.getPath());
         return mcd.getDatas().containsAll(mfc.getFluxs());
     }
-
-    @Override
-    public boolean isCompatibleWithBPMN(BPMNDocument document) {
-        //TODO
-        return false;
-    }
 }
