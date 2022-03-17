@@ -32,6 +32,11 @@ public class FileUploadController {
         return ResponseEntity.ok().header(HttpHeaders.CONTENT_DISPOSITION, "attachment; filename=\"" + file.getFilename() + "\"").body(file);
     }
 
+    @GetMapping("/delete/{filename:.+}")
+    public void deleteFile(@PathVariable String filename) {
+        storageService.delete(filename);
+    }
+
     @PostMapping("/")
     public void handleFileUpload(@RequestParam("file") MultipartFile file) throws IOException {
         storageService.store(file);

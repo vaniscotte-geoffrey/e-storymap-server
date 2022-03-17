@@ -23,6 +23,10 @@ public class StorageService {
 
     @Autowired private DocumentRepository documentRepository;
 
+    public StorageService() {
+        new File(FILES_PATH).mkdirs();
+    }
+
     public void store(MultipartFile file) throws IOException {
         final Path dest = Path.of(FILES_PATH + file.getOriginalFilename());
         file.transferTo(dest);
@@ -39,6 +43,19 @@ public class StorageService {
     public String[] loadAll() {
         this.documentRepository.findAll().forEach(System.out::println);
         return new File(FILES_PATH).list();
+    }
+
+    public void delete(String filename) {
+        final File f = new File(this.FILES_PATH + filename);
+        if (f.exists() && f.delete()) {
+            this.documentRepository.findAll().forEach(document -> {
+                System.out.println(f.getPath()  + " " + document.getPath());
+                if (f.getPath().equals(document.getPath())) {
+                    System.out.println("trouvé");
+                    this.documentRepository.delete(document);
+                }
+            });
+        }
     }
 
     public Resource loadAsResource(String filename) {
