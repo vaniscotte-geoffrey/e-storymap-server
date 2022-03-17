@@ -36,7 +36,7 @@ public class MFCDocument extends Document {
     }
 
     @Override
-    public boolean isCompatibleWithBPMN(BPMNDocument document) {
-        return false;
+    public boolean isCompatibleWithBPMN(BPMNDocument document) throws ParserConfigurationException, IOException, SAXException {
+        return document.isCompatibleWithMFC(this);
     }
 }

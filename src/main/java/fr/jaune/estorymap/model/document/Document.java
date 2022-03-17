@@ -29,6 +29,7 @@ public class Document {
     public Document(String path, DocumentType type) {
         this.path = path;
         this.type = type;
+        System.out.println(this.getClass().getName());
     }
 
     public Long getId() {
@@ -60,7 +61,7 @@ public class Document {
         return true;
     };
 
-    public boolean isCompatibleWithBPMN(BPMNDocument document){
+    public boolean isCompatibleWithBPMN(BPMNDocument document) throws ParserConfigurationException, IOException, SAXException {
         return true;
     };
 }
