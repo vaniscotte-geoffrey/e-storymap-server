@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net" modified="2022-03-17T15:53:30.110Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.74 Safari/537.36" etag="8ZNdHzHyFYv8eR0iGS2e" version="17.1.3" type="device">
+  <diagram id="kKwq7Xxhv8zI9wthXGDd" name="Page-1">
+    <mxGraphModel dx="1422" dy="734" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="6M8GiyuAwBSXUpzzwSgs-15" value="Utilisateur" style="swimlane;startSize=20;horizontal=0;" vertex="1" parent="1">
+          <mxGeometry x="250" y="430" width="760" height="240" as="geometry" />
+        </mxCell>
+        <mxCell id="6M8GiyuAwBSXUpzzwSgs-16" value="Chef de projet" style="swimlane;startSize=20;horizontal=0;" vertex="1" parent="1">
+          <mxGeometry x="250" y="990" width="760" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="6M8GiyuAwBSXUpzzwSgs-18" value="SITE WEB DE GESTION D&#39;UN PROJET&#xa;" style="swimlane;startSize=50;horizontal=0;" vertex="1" parent="1">
+          <mxGeometry x="250" y="690" width="760" height="280" as="geometry" />
+        </mxCell>
+        <mxCell id="6M8GiyuAwBSXUpzzwSgs-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="6M8GiyuAwBSXUpzzwSgs-18" source="6M8GiyuAwBSXUpzzwSgs-21" target="6M8GiyuAwBSXUpzzwSgs-23">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6M8GiyuAwBSXUpzzwSgs-21" value="" style="points=[[0.145,0.145,0],[0.5,0,0],[0.855,0.145,0],[1,0.5,0],[0.855,0.855,0],[0.5,1,0],[0.145,0.855,0],[0,0.5,0]];shape=mxgraph.bpmn.event;html=1;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;verticalAlign=top;align=center;perimeter=ellipsePerimeter;outlineConnect=0;aspect=fixed;outline=standard;symbol=message;" vertex="1" parent="6M8GiyuAwBSXUpzzwSgs-18">
+          <mxGeometry x="60" y="150" width="50" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="6M8GiyuAwBSXUpzzwSgs-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="6M8GiyuAwBSXUpzzwSgs-18" source="6M8GiyuAwBSXUpzzwSgs-23" target="6M8GiyuAwBSXUpzzwSgs-25">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6M8GiyuAwBSXUpzzwSgs-23" value="T41 - Enregistrer l&#39;imputation hebdomadaire" style="points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];shape=mxgraph.bpmn.task;whiteSpace=wrap;rectStyle=rounded;size=10;taskMarker=service;" vertex="1" parent="6M8GiyuAwBSXUpzzwSgs-18">
+          <mxGeometry x="164" y="135" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="6M8GiyuAwBSXUpzzwSgs-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="6M8GiyuAwBSXUpzzwSgs-18" source="6M8GiyuAwBSXUpzzwSgs-25" target="6M8GiyuAwBSXUpzzwSgs-27">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6M8GiyuAwBSXUpzzwSgs-25" value="T45 - Calculer l&#39;avance-retard sur le projet" style="points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];shape=mxgraph.bpmn.task;whiteSpace=wrap;rectStyle=rounded;size=10;taskMarker=service;" vertex="1" parent="6M8GiyuAwBSXUpzzwSgs-18">
+          <mxGeometry x="330" y="135" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="6M8GiyuAwBSXUpzzwSgs-27" value="" style="points=[[0.145,0.145,0],[0.5,0,0],[0.855,0.145,0],[1,0.5,0],[0.855,0.855,0],[0.5,1,0],[0.145,0.855,0],[0,0.5,0]];shape=mxgraph.bpmn.event;html=1;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;verticalAlign=top;align=center;perimeter=ellipsePerimeter;outlineConnect=0;aspect=fixed;outline=throwing;symbol=message;" vertex="1" parent="6M8GiyuAwBSXUpzzwSgs-18">
+          <mxGeometry x="520" y="150" width="50" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="6M8GiyuAwBSXUpzzwSgs-20" value="" style="edgeStyle=elbowEdgeStyle;fontSize=12;html=1;endFill=0;startFill=0;endSize=6;startSize=6;dashed=1;dashPattern=1 4;endArrow=openThin;startArrow=none;rounded=0;exitX=0.25;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="6M8GiyuAwBSXUpzzwSgs-16">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="330" y="810" as="sourcePoint" />
+            <mxPoint x="330" y="890" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="330" y="930" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6M8GiyuAwBSXUpzzwSgs-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;" edge="1" parent="1" source="6M8GiyuAwBSXUpzzwSgs-27">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="795" y="670" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
